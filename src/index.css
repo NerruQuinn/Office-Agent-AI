@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+  :root {
+    color-scheme: light;
+    --bg-primary: var(--color-slate-50);
+    --bg-secondary: var(--color-white);
+    --bg-sidebar: var(--color-slate-50);
+    --border-color: var(--color-slate-200);
+    --text-primary: var(--color-slate-900);
+    --text-secondary: var(--color-slate-500);
+  }
+  .dark {
+    color-scheme: dark;
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0a;
+    --bg-sidebar: #000000;
+    --border-color: #27272a;
+    --text-primary: var(--color-slate-100);
+    --text-secondary: var(--color-slate-400);
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
